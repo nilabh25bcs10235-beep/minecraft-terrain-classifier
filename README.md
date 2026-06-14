@@ -20,6 +20,9 @@ cd minecraft-terrain-classifier
 pip install -r requirements.txt
 
 
+
+
+
 Quick Start
 from minecraft_terrain_classifier_v2 import MinecraftTerrainClassifier, WorldTerrainAnalyzer
 import torch
@@ -42,10 +45,15 @@ results = analyzer.analyze_locations(features)
 suggestions = analyzer.suggest_build_locations(results, min_buildability=65)
 
 
+
+
+
 For Minecraft Mods (Java / Kotlin)
 Use the TorchScript export:
 Module model = Module.load("minecraft_terrain_v2_scripted.pt");
 // Pass normalized features: [x, y, height, slope]
+
+
 
 
 Using with Real Minecraft Data
@@ -70,6 +78,9 @@ slope
 Local steepness
 Height difference to neighbors
 Divide by 3.5
+
+
+
 
 
 Project Structure
